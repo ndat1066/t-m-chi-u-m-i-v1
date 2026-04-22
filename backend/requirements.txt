@@ -1,0 +1,21 @@
+# requirements.txt — Dependencies cho Smart Weaving Backend
+# Cài đặt: pip install -r requirements.txt
+
+# ── Web Framework ──────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12     # Để upload file
+
+# ── HTTP Client (proxy đến ESP32) ─────────────────────────────────────────
+httpx==0.28.1
+
+# ── Xử lý ảnh ─────────────────────────────────────────────────────────────
+Pillow==11.0.0
+numpy==1.26.4
+
+# ── Embedding / Tìm kiếm ngữ nghĩa ───────────────────────────────────────
+sentence-transformers==3.3.1  # Hỗ trợ tiếng Việt (multilingual model)
+torch==2.5.1                  # Backend cho sentence-transformers
+
+# ── Validation ────────────────────────────────────────────────────────────
+pydantic==2.10.3
