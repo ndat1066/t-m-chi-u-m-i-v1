@@ -1,21 +1,2 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-
-# Virtual environment
-.env/
-venv/
-.env.bak/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# JSON output
-pattern_library.json
-
-# IDE
-.vscode/
-.idea/
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
