@@ -1,0 +1,18 @@
+# requirements.txt — Dependencies cho Smart Weaving Backend
+# Cài đặt: pip install -r requirements.txt
+
+# ── Web Framework ──────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-multipart          # Để nhận file upload
+
+# ── HTTP Client (proxy gửi lệnh đến ESP32) ───────────────────────────────
+httpx
+
+# ── Xử lý ảnh & ma trận ──────────────────────────────────────────────────
+Pillow
+numpy
+
+# ── Tìm kiếm mẫu bằng ngữ nghĩa (tùy chọn — có thể bỏ nếu cần nhẹ hơn) ─
+# Nếu không cài, hệ thống tự fallback sang tìm kiếm theo từ khóa
+sentence-transformers
